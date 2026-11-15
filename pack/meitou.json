@@ -1,0 +1,16 @@
+{
+  "id": "meitou.p2p.coop",
+  "version": "0.1.0",
+  "apiVersion": 2,
+  "gameVersion": "=0.20.0",
+  "dependencies": [
+    {
+      "id": "meitou.p2p",
+      "version": ">=0.1.0 <0.2.0"
+    }
+  ],
+  "assemblies": [
+    "MeitouP2P.Coop.dll"
+  ],
+  "entry": "MeitouP2P.Coop.CoopMod"
+}

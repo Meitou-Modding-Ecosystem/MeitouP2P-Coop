@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "provider": "meitou.p2p.coop",
+  "name": "MeitouP2P Co-op",
+  "actions": [
+    {
+      "id": "guest-role",
+      "label": "Label a guest character template",
+      "recordType": "Character",
+      "inputs": [
+        {
+          "key": "pack",
+          "label": "Pack ID",
+          "kind": "text"
+        },
+        {
+          "key": "role",
+          "label": "Role ID",
+          "kind": "text"
+        },
+        {
+          "key": "label",
+          "label": "Guest role label",
+          "kind": "text"
+        },
+        {
+          "key": "characters",
+          "label": "Character templates",
+          "kind": "selection"
+        }
+      ],
+      "edits": [
+        {
+          "op": "dependency",
+          "file": "MeitouP2P-Coop.mod"
+        },
+        {
+          "op": "jsonEntry",
+          "file": "coop-roles.json",
+          "versionField": "schemaVersion",
+          "version": 1,
+          "preserveVersions": [
+            1
+          ],
+          "ownerField": "packId",
+          "owner": "pack",
+          "array": "roles",
+          "idField": "id",
+          "id": "role",
+          "ownerPrefix": true,
+          "fields": {
+            "id": "role",
+            "label": "label",
+            "characters": "characters"
+          },
+          "uniqueSelection": "characters"
+        }
+      ]
+    }
+  ]
+}

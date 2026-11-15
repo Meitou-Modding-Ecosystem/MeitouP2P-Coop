@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>0.1.0</Version>
+    <MeitouDir Condition="'$(MeitouDir)' == ''">$(MEITOU_DIR)</MeitouDir>
+    <ConnectorProject Condition="'$(ConnectorProject)' == ''">../../MeitouP2P/src/MeitouP2P.csproj</ConnectorProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MeitouClient;Meitou.Core;Meitou.Data;Meitou.Simulation;0Harmony">
+      <HintPath>$(MeitouDir)/%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(ConnectorProject)" Private="false" />
+  </ItemGroup>
+</Project>
