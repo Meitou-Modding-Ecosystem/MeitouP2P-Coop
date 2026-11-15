@@ -2,6 +2,12 @@
 
 Co-op supplies a v1 provider action on FCS Character records. Maestro writes the project dependency on `MeitouP2P-Coop.mod` and an entry in `coop-roles.json`. At runtime, Co-op reads enabled role packs in load order. A later label wins for the same template. The host assigns the actual character to the connection. [Descriptor](../pack/maestro.json) · [Maestro v1 reference](https://github.com/mattresspad/MeitouMaestro/blob/v0.1.0-playtest.1/DESCRIPTORS.md)
 
+## Verified with the public tag
+
+On November 15, 2026, fresh sibling clones passed the role export test with Maestro `v0.1.0-playtest.1` at `4846237c`. The authoring probe loaded the tagged core and the 0.20.1 data reader. The two gameplay probes used the 0.20.0 reader. File digests matched the respective game installations.
+
+The saved FCS header contained `MeitouP2P-Coop.mod` as a dependency, and those exact bytes reached the ZIP. The JSON mapped the synthetic Character `1-p2p-test.base` to `stoat.scout` in pack `stoat`, with display label **Stoat Scout** and schema version 1. Both gameplay processes applied one role label. The guest read back **Stoat Scout** at host ticks 3 and 453. The separate earlier test used the Avalonia prototype.2 core. The public tag result covers authoring interoperability. The tested gameplay runtime remains 0.20.0. [Tagged Maestro source](https://github.com/mattresspad/MeitouMaestro/tree/4846237c0a9a6ac7a3a4c7c033957d5b58423cd3)
+
 ## Reproduce the tagged-core check
 
 Use sibling checkouts named `MeitouP2P`, `MeitouP2P-Coop` and `MeitouMaestro`. From the connector checkout, build both mods against stock Windows 0.20.0 as described in the connector README. Set `MEITOU_0201_DIR` to the extracted 0.20.1 folder containing `Meitou.Data.dll`. Build the tagged core and a separate authoring probe with those readers.
