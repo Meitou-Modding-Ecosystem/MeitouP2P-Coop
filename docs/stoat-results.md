@@ -1,5 +1,9 @@
 # Stoat Scout playtest
 
+The recorded replays below used a launcher with `--no-objects` and `--no-foliage`. Buildings, map features and foliage were omitted while residents still spawned. They demonstrate the character movement and selection checks in that reduced scene. The launcher now loads buildings and foliage for hands-on play.
+
+The complete native-input trial passed again on November 22, 2026 with buildings and foliage enabled in two fresh 0.22.1 windows. The host accepted exactly two Scout moves at ticks 215 and 894. The guest panned away, reselected her at arrival and moved her again while the host retained its camera and Guide selection. Guide-only and mixed-selection moves were refused. Both clients loaded the building renderer, and Stoat's walls and buildings were visually checked after the walk.
+
 ## Stock Windows 0.22.1
 
 Recorded on November 22, 2026 with stock Windows MeitouClient `0.22.1+9ee4074bbc6fd7fdeb26108a04afc9f90cb1dc01`. Two fresh profiles with autosave disabled loaded the packages built for `=0.22.1` and the matching Stoat fixture. The original native-input driver passed the complete walk. The replay pairs actual screen captures. [0.22.1 replay](stoat-walk-0.22.1.gif) · [Stock release](https://github.com/VlcekM/MeitouClient/releases/tag/v0.22.1)
