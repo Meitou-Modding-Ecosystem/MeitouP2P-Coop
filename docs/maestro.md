@@ -12,6 +12,8 @@ The 0.20.1 compatibility run repeated the tagged-core export and checked the dep
 
 ## Reproduce the tagged-core check
 
+On November 22, 2026, the same tagged authoring core and its 0.20.1 data reader exported another Stoat Scout pack for the 0.22.1 compatibility run. Both 0.22.1 gameplay loaders applied the label. Movement reached X 399.44 at host tick 453, and the stale-grant, reconnect and world-replacement checks passed. The dependency and JSON validation used the existing smoke test.
+
 Use sibling checkouts named `MeitouP2P`, `MeitouP2P-Coop` and `MeitouMaestro`. From the connector checkout, build both mods against the Windows release you want to test. Set `MEITOU_0201_DIR` to the extracted 0.20.1 folder containing `Meitou.Data.dll`. Build the tagged core and a separate authoring probe with those readers.
 
 ```powershell
@@ -22,7 +24,7 @@ dotnet build tools/Probe/Probe.csproj -c Release "-p:MeitouDir=$env:MEITOU_0201_
 python tools/smoke.py --maestro artifacts/maestro-author/Probe.dll
 ```
 
-The authoring process reviews, saves and exports a Stoat Scout role. The smoke test checks the FCS dependency and JSON fields, installs the exported pack, and reads the authored label back through two gameplay loaders for the selected release. The fixture uses original synthetic data. [Connector build](https://github.com/mattresspad/MeitouP2P#build-and-test-with-co-op)
+The authoring process reviews, saves and exports a Stoat Scout role. The smoke test checks the FCS dependency and JSON fields, installs the exported pack, and reads the authored label back through two gameplay loaders for the selected release. The fixture uses original synthetic data. [Connector build](https://github.com/Meitou-Modding-Ecosystem/MeitouP2P#build-and-test-with-co-op)
 
 ## Handoff for Husbandry and Dialogue
 
