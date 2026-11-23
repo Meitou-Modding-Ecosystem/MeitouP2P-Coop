@@ -5,9 +5,9 @@ One host controls Guide and one guest controls Scout. This preview shares their 
 ## Prepare each Windows PC
 
 1. Install your own Kenshi and extract [Meitou 0.22.1](https://github.com/VlcekM/MeitouClient/releases/tag/v0.22.1). Keep both installations intact.
-2. Extract this preview ZIP. Open PowerShell in the extracted folder and run `./Setup.ps1`. Supply the two installation folders when prompted. The helper creates a separate `profile` with autosave off. It leaves your usual mod selection and saves alone.
+2. Extract this preview ZIP. Open PowerShell in the extracted folder and run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1`. Supply the two installation folders when prompted. The helper creates a separate `profile` with autosave off. It leaves your usual mod selection and saves alone.
 3. Install [Tailscale](https://tailscale.com/download/windows) on each PC and sign in using your own accounts. The host [shares their host device](https://tailscale.com/docs/features/sharing) with the volunteer. The volunteer accepts that invitation.
-4. Run `./Launch.ps1`. This opens one client at its main menu. Player setup needs no SDK, Python, or source checkout.
+4. Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Launch.ps1`. This opens one client at its main menu. Player setup needs no SDK, Python, or source checkout. The commands allow these unsigned preview scripts for that PowerShell process only; they do not change your saved execution policy.
 
 The helper uses each person's local game data through a directory junction. The ZIP contains original mod files and tools only. `preview.json` identifies both source commits and the required game build. `checksums.json` lists the packaged files.
 
@@ -41,7 +41,7 @@ For connection failures, confirm Host is listening on the copied address, both T
 4. Select Guide alone on the guest and right-click. Verify visible refusal and no resulting Guide order on the host.
 5. Interrupt the guest connection, then reconnect through **Session → Rejoin → Ready**. Repeat a Scout move and verify a new grant in the logs.
 
-Capture both screens, note the Tailscale connection type and any pauses or jumps, then run `./Collect-Logs.ps1` on each PC. Review the log ZIPs before sharing them. Report results separately from the earlier same-PC replay. A remote pass requires observations and logs from both PCs.
+Capture both screens, note the Tailscale connection type and any pauses or jumps, then run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Collect-Logs.ps1` on each PC. You can collect logs while the game is running. Review the log ZIPs before sharing them. Report results separately from the earlier same-PC replay. A remote pass requires observations and logs from both PCs.
 
 Developer automation may pass `-TestControl` to the launcher. The normal launch leaves that local test channel disabled. Graphics defaults are deliberately modest, with town buildings and foliage present. The gameplay reference is [nhoral's KenshiCoop](https://github.com/nhoral/KenshiCoop).
 
