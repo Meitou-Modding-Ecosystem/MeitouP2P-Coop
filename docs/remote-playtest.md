@@ -11,6 +11,8 @@ One host controls Guide and one guest controls Scout. This preview shares their 
 
 The helper uses each person's local game data through a directory junction. The ZIP contains original mod files and tools only. `preview.json` identifies both source commits and the required game build. `checksums.json` lists the packaged files.
 
+Extract the preview onto a drive with room for generated caches: Meitou's terrain and distant-object caches can occupy many gigabytes. Setup defaults to a shared `cache` folder beside the player scripts, and Launch passes it through the stock `--cache-root` option. To keep it elsewhere, add `-CacheDir 'D:\Caches\Meitou'` to Setup; that path is remembered in the profile. Launch also accepts `-CacheDir` as a one-run override, including for older profiles. Both local players can use the same cache directory. It contains generated data, not saves, and is excluded from the ZIP. The isolated launcher clears inherited per-cache environment overrides for its child process so they cannot send those caches to a different drive.
+
 ## Host and join
 
 On the host, select **Multiplayer**, select **Co-op / Stoat Walk preview**, and use **Local** to choose the host's Tailscale IPv4 address. Keep port **42871**, then click **Host** and **Copy** to share that address with your volunteer. The address beginning `127.` is only for testing two windows on the same PC.

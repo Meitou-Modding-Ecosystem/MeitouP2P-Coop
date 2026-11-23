@@ -1,4 +1,4 @@
-param([string]$Meitou, [string]$Kenshi, [Alias('Profile')][string]$ProfileDir = (Join-Path $PSScriptRoot 'profile'))
+param([string]$Meitou, [string]$Kenshi, [Alias('Profile')][string]$ProfileDir = (Join-Path $PSScriptRoot 'profile'), [string]$CacheDir = (Join-Path $PSScriptRoot 'cache'))
 $ErrorActionPreference = 'Stop'
 if (!$Meitou) { $Meitou = Read-Host 'Extracted Meitou 0.22.1 folder (contains MeitouClient.exe)' }
 if (!$Kenshi) { $Kenshi = Read-Host 'Your Kenshi installation folder' }
@@ -11,6 +11,8 @@ if ($gameVersion -ne $package.gameBuild) { throw "Use the matching stock Meitou 
 $data = (Resolve-Path -LiteralPath (Join-Path $Kenshi 'data')).Path
 $ProfileDir = [IO.Path]::GetFullPath($ProfileDir)
 if (Test-Path -LiteralPath $ProfileDir) { throw "Profile already exists: $ProfileDir. Choose a new -ProfileDir folder to keep existing playtests." }
+$CacheDir = [IO.Path]::GetFullPath($CacheDir)
+New-Item -ItemType Directory -Path $CacheDir -Force | Out-Null
 $install = Join-Path $ProfileDir 'install'
 New-Item -ItemType Directory -Path $ProfileDir, "$ProfileDir\temp", "$install\mods" | Out-Null
 New-Item -ItemType Junction -Path "$install\data" -Target $data | Out-Null
@@ -24,7 +26,8 @@ foreach ($name in 'MeitouP2P','MeitouP2P-Coop','Stoat Walk') {
 @('MeitouP2P.mod','MeitouP2P-Coop.mod','Stoat Walk.mod') | Set-Content -LiteralPath "$ProfileDir\mods.cfg" -Encoding ascii
 @{version=2; fullScreen=$false; vSync=$false; showNames=$true; splashScreens=$false; tutorials=$false; pauseOnLoad=$false; edgeScroll=$false; uiMode=1; meitouMainMenu=$false; gameplay=@{autoSave=$false}} |
     ConvertTo-Json -Depth 4 | Set-Content -LiteralPath "$ProfileDir\meitou.user.json" -Encoding UTF8
-@{game=$exe; install=$install; gameBuild=$gameVersion} | ConvertTo-Json | Set-Content -LiteralPath "$ProfileDir\preview-settings.json" -Encoding UTF8
+@{game=$exe; install=$install; gameBuild=$gameVersion; cache=$CacheDir} | ConvertTo-Json | Set-Content -LiteralPath "$ProfileDir\preview-settings.json" -Encoding UTF8
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'preview.json') -Destination $ProfileDir
 Write-Output "Profile ready: $ProfileDir"
+Write-Output "Derived-data cache: $CacheDir"
 Write-Output "Launch with .\Launch.ps1 -ProfileDir '$ProfileDir'"

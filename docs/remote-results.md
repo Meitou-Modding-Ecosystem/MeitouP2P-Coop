@@ -18,6 +18,7 @@ Local test date: **22 November 2026**. Game: stock Windows Meitou **0.22.1**, bu
 | UI styles and size | Meitou and Faithful gameplay styles; 860-pixel client and maximized 1920-pixel client; native close button and restored window size. |
 | Existing baseline | Connector-only handshake/ping/leave, combined host-resolved movement, stale grants, reconnect and replacement-world checks passed. The earlier loopback replay remains unchanged. |
 | Player package | Clean sibling builds produced the combined ZIP. Its setup and launcher ran with neither the SDK nor Python on the player PATH, and that extracted package passed the native walk. The corrected log collector captured both running clients' complete log snapshots and version metadata; archived bytes matched the source files. |
+| Cache location follow-up | Stock Windows PowerShell setup/launcher checks verified a saved cache directory, a one-run override, older-profile fallback, spaces and trailing separators, and both legacy clients using the same cache. Launch interception verified child-only environment changes without opening game windows. This launcher follow-up does not change movement or network code. |
 
 ## Walk evidence
 
