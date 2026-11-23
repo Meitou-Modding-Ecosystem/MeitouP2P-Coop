@@ -19,6 +19,7 @@ internal sealed class CoopWorld(ISessionApi session, IReadOnlyDictionary<string,
 
     public string Reply(Guid peer, string request)
     {
+        if (trial is { CanGrant: false }) return "Waiting for both worlds.";
         var publication = latest;
         if (publication?.Peer != peer) return "The host must offer a player character.";
         if (request == "view") return JsonSerializer.Serialize(publication.View);
@@ -40,8 +41,16 @@ internal sealed class CoopWorld(ISessionApi session, IReadOnlyDictionary<string,
     public void Inputs(World world, IReadOnlyList<SimCommand> commands)
     {
         var peer = session.HostedPeer;
+        if (trial is { CanGrant: false })
+        {
+            if (assigned != null) log($"Invalidated Scout grant {assigned.Grant} at host tick {world.Tick}; trial is not ready.");
+            assigned = null; latest = null; Interlocked.Exchange(ref pending, null); return;
+        }
         if (trial is { Host: true } && assigned?.Peer != peer && peer is Guid joined && trial.ScoutIn(world) is { } scout)
+        {
             assigned = new Offer(joined, Guid.NewGuid(), scout) { Tick = world.Tick };
+            log($"Issued Scout grant {assigned.Grant} to peer {joined} at host tick {world.Tick}.");
+        }
         foreach (var command in commands)
             if (command is Offer offer && offer.Peer == peer) assigned = offer;
         var order = Interlocked.Exchange(ref pending, null);
