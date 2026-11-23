@@ -17,6 +17,7 @@ Local test date: **22 November 2026**. Game: stock Windows Meitou **0.22.1**, bu
 | World replacement | Starting a different game in the guest stopped its trial and invalidated the host grant. The lobby regression also rejects a fresh guest attempting to reuse the suspended trial; start a fresh host session. |
 | UI styles and size | Meitou and Faithful gameplay styles; 860-pixel client and maximized 1920-pixel client; native close button and restored window size. |
 | Existing baseline | Connector-only handshake/ping/leave, combined host-resolved movement, stale grants, reconnect and replacement-world checks passed. The earlier loopback replay remains unchanged. |
+| Player package | Clean sibling builds produced the combined ZIP. Its setup and launcher ran with neither the SDK nor Python on the player PATH, and that extracted package passed the native walk. The corrected log collector captured both running clients' complete log snapshots and version metadata; archived bytes matched the source files. |
 
 ## Walk evidence
 
