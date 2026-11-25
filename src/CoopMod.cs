@@ -19,6 +19,8 @@ public sealed class CoopMod : IMod
         session = context.Dependency<ISessionApi>("meitou.p2p") ?? throw new InvalidOperationException("Connector unavailable.");
         var labels = RoleLabels.Load(context);
         var trial = StoatWalkTrial.Open(context, session);
+        if (trial != null && session is IMultiplayerApi multiplayer)
+            multiplayer.RegisterMode(new StoatMode(context, trial));
         context.AddSystem("Guest character", _ =>
         {
             trial?.ResetWorld();
