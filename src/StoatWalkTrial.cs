@@ -22,6 +22,9 @@ internal sealed class StoatWalkTrial : IUiExtension
     private readonly ISessionApi session;
     private readonly ModContext context;
     private readonly int port;
+    private readonly bool legacy;
+    private bool engaged, playing;
+    internal bool CanGrant { get { lock (gate) return legacy || playing; } }
     private readonly object gate = new();
     private Capture? scout, guide;
     private (Capture Scout, Capture Guide)? complete;
@@ -32,27 +35,30 @@ internal sealed class StoatWalkTrial : IUiExtension
     private bool requestingMove, connecting, connected;
     private int worldNumber, requestWorld;
     private string status = "Ready", feedback = Hint;
-    private long nextPoll, feedbackUntil;
+    private long nextPoll, feedbackUntil, nextPoseLog;
     private MethodInfo? selected;
-    internal bool Host { get; }
+    internal bool Host { get; private set; }
     public string Id => "stoat.walk";
 
-    private StoatWalkTrial(ModContext context, ISessionApi session, bool host, int port)
+    private StoatWalkTrial(ModContext context, ISessionApi session, bool host, int port, bool legacy)
     {
         this.context = context;
         this.session = session;
         this.port = port;
         Host = host;
+        this.legacy = legacy;
+        engaged = legacy;
     }
 
     internal static StoatWalkTrial? Open(ModContext context, ISessionApi session)
     {
         string? role = Environment.GetEnvironmentVariable("MEITOU_STOAT_WALK_ROLE");
-        if (role is not ("host" or "guest") || context.Data.Find(ScoutRecord) == null || context.Data.Find(GuideRecord) == null) return null;
-        if (!int.TryParse(Environment.GetEnvironmentVariable("MEITOU_STOAT_WALK_PORT"), out var port) || port is < 1 or > 65535)
+        if (context.Data.Find(ScoutRecord) == null || context.Data.Find(GuideRecord) == null) return null;
+        bool legacy = role is "host" or "guest";
+        int port = 42871;
+        if (legacy && (!int.TryParse(Environment.GetEnvironmentVariable("MEITOU_STOAT_WALK_PORT"), out port) || port is < 1 or > 65535))
             throw new ArgumentException("Set the Stoat trial loopback port.");
-        var t = new StoatWalkTrial(context, session, role == "host", port);
-        if (!t.Host)
+        var t = new StoatWalkTrial(context, session, role == "host", port, legacy);
         {
             var player = typeof(IMod).Assembly.GetType("Meitou.Game.PlayerInterface", throwOnError: true)!;
             t.selected = AccessTools.DeclaredMethod(player, "Selected", Type.EmptyTypes) ?? throw new MissingMethodException(player.FullName, "Selected");
@@ -88,6 +94,28 @@ internal sealed class StoatWalkTrial : IUiExtension
         }
     }
 
+    internal void BeginRuntime(bool host)
+    {
+        lock (gate) { Host = host; engaged = connecting = true; playing = false; ResetWorld(); }
+    }
+
+    internal void RuntimeFrame(bool ready)
+    {
+        lock (gate)
+        {
+            if (legacy || !engaged) return;
+            if (playing != ready) { worldNumber++; ClearGuest(); playing = ready; }
+            if (ready) Pump();
+        }
+    }
+
+    internal void EndRuntime()
+    {
+        lock (gate) { playing = engaged = connecting = false; ResetWorld(); }
+    }
+
+    internal bool CapturedBoth { get { lock (gate) return complete != null; } }
+
     internal CharacterId? ScoutIn(World world)
     {
         lock (gate) return scout is { } s && ReferenceEquals(s.World, world) ? s.Actor : null;
@@ -114,7 +142,7 @@ internal sealed class StoatWalkTrial : IUiExtension
 
     private static void Published(World __instance, CharacterSnapshot s)
     {
-        if (!s.IsPlayer || s.RecordId is not (ScoutRecord or GuideRecord) || active is not { } trial) return;
+        if (!s.IsPlayer || s.RecordId is not (ScoutRecord or GuideRecord) || active is not { engaged: true } trial) return;
         lock (trial.gate)
         {
             if (trial.Host)
@@ -151,9 +179,15 @@ internal sealed class StoatWalkTrial : IUiExtension
 
     private static bool GroundMove(object __instance, Vector3 target, bool queued, bool ___Steering)
     {
-        if (active is not { Host: false } t) return true;
+        if (active is not { } t) return true;
         lock (t.gate)
         {
+            if (t.engaged && !t.legacy && !t.playing)
+            {
+                t.Feedback("Waiting for both players to be ready.");
+                return false;
+            }
+            if (t.Host) return true;
             if (!t.connecting) return true;
             // A press has already supplied the destination. Steer() repeats Move every tick until release.
             if (___Steering) return false;
@@ -193,13 +227,14 @@ internal sealed class StoatWalkTrial : IUiExtension
         {
             lock (gate)
             {
-                Pump();
+                if (!engaged) return new UiNode(r.Key("trial-idle")) { Pickable = false };
+                if (legacy) Pump();
                 string side = Host ? "HOST" : "GUEST";
                 var panel = new UiNode(r.Key("trial-panel")) { Placement = new(475,63, Left:12,Top:12), Pickable = false };
                 panel.Children.Add(new UiNode(r.Key("status"), UiNodeKind.Label) { Text = side + "   " + status, Style = style, Placement = new(360,28) });
-                panel.Children.Add(new UiNode(r.Key("session"), UiNodeKind.Button) {
+                if (legacy) panel.Children.Add(new UiNode(r.Key("session"), UiNodeKind.Button) {
                     Text = Host ? "Host session" : "Join host", Style = style, Action = connect, Placement = new(110,29, Top:31) });
-                if (!Host) panel.Children.Add(new UiNode(r.Key("hint"), UiNodeKind.Label) {
+                if (!Host || Environment.TickCount64 < feedbackUntil) panel.Children.Add(new UiNode(r.Key("hint"), UiNodeKind.Label) {
                     Text = Environment.TickCount64 < feedbackUntil ? feedback : Hint, Style = style, Placement = new(340,29, Left:115, Top:31) });
                 return panel;
             }
@@ -236,7 +271,7 @@ internal sealed class StoatWalkTrial : IUiExtension
                     if (status != "A request is in progress.")
                     {
                         ClearGuest();
-                        if (connected) connecting = false;
+                        if (connected && legacy) connecting = false;
                         connected = false;
                     }
                 }
@@ -270,8 +305,17 @@ internal sealed class StoatWalkTrial : IUiExtension
         }
         if (!reply.StartsWith('{')) { ClearGuest(); status = reply; return; }
         var frame = JsonSerializer.Deserialize<Sample>(reply)!;
-        if (remote?.Grant != frame.Grant) ClearGuest();
+        if (remote?.Grant != frame.Grant)
+        {
+            ClearGuest();
+            context.Log($"Received Scout grant {frame.Grant} at host tick {frame.Tick}.");
+        }
         remote = frame;
         status = "Scout and Guide   ·   host tick " + frame.Tick;
+        if (Environment.TickCount64 >= nextPoseLog)
+        {
+            nextPoseLog = Environment.TickCount64 + 5000;
+            context.Log($"Pose pair received; grant {frame.Grant}; host tick {frame.Tick}.");
+        }
     }
 }
