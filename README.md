@@ -2,7 +2,7 @@
 
 A two-player **developer preview** for stock Windows MeitouClient **0.22.1**. The guest can select Stoat Scout and right-click a destination while the host moves Stoat Guide. Both players retain their own cameras and selections.
 
-The 0.2 preview adds **Multiplayer → Host / Join**, coordinated world preparation, and an isolated player ZIP for a volunteer test over Tailscale. [Player setup and acceptance steps](docs/remote-playtest.md) · [Menu, walk and reconnect validation](docs/remote-results.md). The actual two-PC volunteer result remains pending. The replay below records the earlier same-PC trial.
+The 0.2 preview adds **Multiplayer → Host / Join**, coordinated world preparation, and an isolated player ZIP for a volunteer test over Tailscale. [Player setup and acceptance steps](docs/remote-playtest.md) · [Menu, walk and reconnect validation](docs/remote-results.md). A first two-PC volunteer session on 23 November 2026 reported approximately 30 minutes of shared movement, corroborated by host logs, and a successful fresh-session restart. Doors, carried objects and inventory/trading remain unsynchronized; full remote acceptance is still incomplete. The replay below records the earlier same-PC trial.
 
 ![The host moves Stoat Guide while the guest walks and reselects Stoat Scout in stock MeitouClient 0.22.1](docs/stoat-walk-0.22.1.gif)
 

@@ -1,8 +1,33 @@
-# Multiplayer-menu preview: local validation
+# Multiplayer-menu preview: local and remote results
 
 Local test date: **22 November 2026**. Game: stock Windows Meitou **0.22.1**, build `9ee4074bbc6fd7fdeb26108a04afc9f90cb1dc01`. Packages: P2P and Co-op **0.2.0**, connector protocol **2**. The combined ZIP's `preview.json` records its exact source commit pair.
 
-**The two-PC volunteer result is pending.** These checks used two visible clients on one Windows PC, first over loopback and then through a loopback fault proxy. They do not establish internet latency, Tailscale connectivity, or stability on the volunteer's machine.
+**First two-PC movement session reported on 23 November 2026:** approximately 30 minutes over Tailscale, followed by a successful fresh-session restart. The host log corroborates connection, world preparation, guest movement submissions and grant invalidation. This is a movement milestone, not a pass for shared world interactions or the complete remote acceptance checklist.
+
+## Two-PC volunteer session — 23 November 2026
+
+The host reported that, after the volunteer installed the preview and accepted the Tailscale device-sharing invitation, guest Ready followed by host Start trial was straightforward. Both players ran independently, entered and left buildings, and separated their characters during roughly 30 minutes of play.
+
+Observed boundaries:
+
+| Action | Reported outcome |
+| --- | --- |
+| Scout and Guide movement | Worked across the two PCs during sustained manual play. |
+| Doors | Opening/closing a door did not consistently update its appearance on the other PC. |
+| Carrying and dropping a corpse | The carried/dropped body was not visible to the other player as expected. |
+| Trading | Trade UI opened locally; a guest-reported clothing transfer did not appear on the host. No synchronized inventory transaction is established. |
+| Full disconnect and subsequent join | Host returned to the main menu. Hosting again, joining and starting launched a fresh session successfully. This does not establish same-world resume. |
+| Setup | Tailscale account/device sharing and manual installation were a substantial usability barrier. Simplifying instructions and connection feedback is a follow-up; this result does not require replacing the transport. |
+
+The retained host log contains **1,229 guest move submissions** across two trial IDs, fixture readiness for each trial, and fresh Scout grants. It records grant invalidation on both disconnects. Between the trials it explicitly records `Start a fresh host trial after a world replacement or new guest.` The lobby treats a new connection without the prepared trial ID as requiring a fresh trial; stopping Co-op requests the main menu. The unexpected menu transition needs clearer user-facing explanation. The host error log is empty; that alone does not establish absence of defects. Host-side `round trip 0 ms` entries are not a measured internet-latency result.
+
+Evidence: participant report plus a locally retained host log archive. No remote-session screenshots/video were captured, and guest logs have not yet been reviewed. The full pan-away / old-position miss / destination-body reselection sequence, Guide-order refusal, independent selection retention, and same-world reconnect remain separately unverified remotely. The captures below are **local** evidence only.
+
+Tested package: P2P `af345e1ec8f5273de2f5b9292f6af4212f96ea2c`, Co-op `4bb3336ff3631dd1bba4150c9dfd96646b6618a0`; combined ZIP SHA-256 `9848bcc09a13fb43a901321d015a35a5e98eb52776b78efde2dfba807283a970`. This results update does not rebuild or alter that tested ZIP. Raw logs remain private because they include machine and connection details.
+
+## Local validation scope
+
+The checks below used two visible clients on one Windows PC, first over loopback and then through a loopback fault proxy. They do not establish internet latency or stability on the volunteer's machine.
 
 ## What passed locally
 
@@ -56,6 +81,6 @@ Run `dotnet run --project tools/SessionChecks -c Release` for transport/lobby fa
 
 The isolated profile uses the stock static title because the animated title stalled during this local test. Several explicit background-window activations by the Windows automation helper were followed by a native `GLFW.PollEvents` access violation. The cause is unresolved. Keeping the guest foreground and using Meitou's built-in coordinate-click test channel allowed the checks above to complete. Manual window switching and the actual remote volunteer session still need broader stability testing.
 
-Only Scout and Guide's poses and guest movement requests are shared. NPCs, combat, inventory and campaign simulation remain independent. Loading another world requires a fresh host trial. Follow the separate [volunteer acceptance checklist](remote-playtest.md) and collect both PCs' logs before recording a remote pass.
+Only Scout and Guide's poses and guest movement requests are shared. Doors, carried objects, NPCs, combat, inventory and campaign simulation remain independent. Loading another world requires a fresh host trial. Follow the separate [volunteer acceptance checklist](remote-playtest.md) and collect both PCs' logs before recording a complete remote acceptance pass.
 
 The [gameplay-footage notice](../LICENSING.md#stoat-replay) applies to these captures; they are excluded from the CC0 dedication for original guides and fixtures.
