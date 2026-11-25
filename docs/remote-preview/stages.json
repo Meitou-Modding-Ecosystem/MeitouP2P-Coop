@@ -1,0 +1,2874 @@
+[
+  {
+    "label": "Guest selects Scout by her body",
+    "host": {
+      "tick": 595,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34617,
+            970.8,
+            -70138.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            288,
+            276
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34576.2,
+            973.8,
+            -70142.5
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            170,
+            264
+          ]
+        }
+      },
+      "image": "00-host.png"
+    },
+    "guest": {
+      "tick": 915,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34617,
+            970.8,
+            -70138.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            288,
+            276
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34576.2,
+            973.8,
+            -70142.5
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            170,
+            264
+          ]
+        }
+      },
+      "image": "00-guest.png"
+    },
+    "time": 1795398153.51342
+  },
+  {
+    "label": "Both players move their Wanderer",
+    "host": {
+      "tick": 672,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34617.6,
+            971.3,
+            -70141
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            291,
+            272
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34589.4,
+            973.3,
+            -70143.5
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            209,
+            264
+          ]
+        }
+      },
+      "image": "01-host.png"
+    },
+    "guest": {
+      "tick": 993,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34617,
+            970.8,
+            -70138.9
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            288,
+            276
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34587.9,
+            973.3,
+            -70143.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            205,
+            264
+          ]
+        }
+      },
+      "image": "01-guest.png"
+    },
+    "time": 1795398156.1609879
+  },
+  {
+    "label": "Both players move their Wanderer",
+    "host": {
+      "tick": 677,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34619.9,
+            973.2,
+            -70149.7
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            302,
+            258
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34592.2,
+            973.2,
+            -70143.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            218,
+            264
+          ]
+        }
+      },
+      "image": "02-host.png"
+    },
+    "guest": {
+      "tick": 998,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34618.4,
+            972,
+            -70144.1
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            295,
+            267
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34590.7,
+            973.2,
+            -70143.6
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            213,
+            264
+          ]
+        }
+      },
+      "image": "02-guest.png"
+    },
+    "time": 1795398156.4440978
+  },
+  {
+    "label": "Guest pans away",
+    "host": {
+      "tick": 779,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34643,
+            971.7,
+            -70147.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            367,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "03-host.png"
+    },
+    "guest": {
+      "tick": 1108,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34643.9,
+            971.6,
+            -70147.8
+          ],
+          "selected": true,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "03-guest.png"
+    },
+    "time": 1795398160.1267827
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 808,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34657.7,
+            971.1,
+            -70148.9
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            409,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "04-host.png"
+    },
+    "guest": {
+      "tick": 1138,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34658.4,
+            971.1,
+            -70148.9
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "04-guest.png"
+    },
+    "time": 1795398161.200188
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 830,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34668.5,
+            970.7,
+            -70149.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            440,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "05-host.png"
+    },
+    "guest": {
+      "tick": 1151,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34666.5,
+            970.8,
+            -70149.5
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "05-guest.png"
+    },
+    "time": 1795398161.8083868
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 843,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34675.2,
+            970.5,
+            -70150.2
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            459,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "06-host.png"
+    },
+    "guest": {
+      "tick": 1173,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34675.9,
+            970.5,
+            -70150.3
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "06-guest.png"
+    },
+    "time": 1795398162.5328865
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 864,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34685.5,
+            970.1,
+            -70151
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            488,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "07-host.png"
+    },
+    "guest": {
+      "tick": 1186,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34683.6,
+            970.2,
+            -70150.9
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "07-guest.png"
+    },
+    "time": 1795398163.141636
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 877,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34692.2,
+            969.9,
+            -70151.5
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            506,
+            264
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "08-host.png"
+    },
+    "guest": {
+      "tick": 1208,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34692.9,
+            969.9,
+            -70151.6
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "08-guest.png"
+    },
+    "time": 1795398163.8779144
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 899,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34703,
+            969.5,
+            -70152.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            536,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "09-host.png"
+    },
+    "guest": {
+      "tick": 1221,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34701.1,
+            969.6,
+            -70152.2
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "09-guest.png"
+    },
+    "time": 1795398164.5005727
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 912,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34709.7,
+            969.3,
+            -70152.9
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            555,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "10-host.png"
+    },
+    "guest": {
+      "tick": 1242,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34710.4,
+            969.3,
+            -70153
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "10-guest.png"
+    },
+    "time": 1795398165.186288
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 934,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34720.5,
+            969,
+            -70153.8
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            584,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "11-host.png"
+    },
+    "guest": {
+      "tick": 1255,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34718.1,
+            969,
+            -70153.6
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "11-guest.png"
+    },
+    "time": 1795398165.853849
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 946,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34726.8,
+            968.8,
+            -70154.2
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            601,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "12-host.png"
+    },
+    "guest": {
+      "tick": 1276,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34727.4,
+            968.7,
+            -70154.3
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "12-guest.png"
+    },
+    "time": 1795398166.5382855
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 968,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34737.5,
+            968.4,
+            -70155.1
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            630,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "13-host.png"
+    },
+    "guest": {
+      "tick": 1290,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34734.9,
+            968.5,
+            -70154.9
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "13-guest.png"
+    },
+    "time": 1795398167.191171
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 980,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34743.8,
+            968.2,
+            -70155.6
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            647,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "14-host.png"
+    },
+    "guest": {
+      "tick": 1312,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34744.4,
+            968.2,
+            -70155.6
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "14-guest.png"
+    },
+    "time": 1795398167.876142
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 1001,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34754,
+            967.8,
+            -70156.3
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            674,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "15-host.png"
+    },
+    "guest": {
+      "tick": 1325,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34752,
+            967.9,
+            -70156.2
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "15-guest.png"
+    },
+    "time": 1795398168.48896
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 1014,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34760.8,
+            967.6,
+            -70156.8
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            692,
+            265
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "16-host.png"
+    },
+    "guest": {
+      "tick": 1347,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34761.4,
+            967.6,
+            -70156.8
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "16-guest.png"
+    },
+    "time": 1795398169.1628892
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 1036,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34771.5,
+            967.2,
+            -70157.5
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            721,
+            265
+          ]
+        }
+      },
+      "image": "17-host.png"
+    },
+    "guest": {
+      "tick": 1360,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Scout": {
+          "position": [
+            34769,
+            967.3,
+            -70157.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "17-guest.png"
+    },
+    "time": 1795398169.8510091
+  },
+  {
+    "label": "Guest looks away while the host resolves the walk",
+    "host": {
+      "tick": 1049,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.3,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            738,
+            266
+          ]
+        }
+      },
+      "image": "18-host.png"
+    },
+    "guest": {
+      "tick": 1382,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          35030.1,
+          949.4,
+          -70142
+        ],
+        "eye": [
+          35030.1,
+          1044.5,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.4,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": false,
+          "screen": null
+        }
+      },
+      "image": "18-guest.png"
+    },
+    "time": 1795398170.4860528
+  },
+  {
+    "label": "Old body location misses",
+    "host": {
+      "tick": 1263,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            740,
+            266
+          ]
+        }
+      },
+      "image": "19-host.png"
+    },
+    "guest": {
+      "tick": 1595,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            723,
+            265
+          ]
+        }
+      },
+      "image": "19-guest.png"
+    },
+    "time": 1795398177.6958425
+  },
+  {
+    "label": "Guest reselects Scout at arrival",
+    "host": {
+      "tick": 1308,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            740,
+            266
+          ]
+        }
+      },
+      "image": "20-host.png"
+    },
+    "guest": {
+      "tick": 1641,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            723,
+            265
+          ]
+        }
+      },
+      "image": "20-guest.png"
+    },
+    "time": 1795398179.2828388
+  },
+  {
+    "label": "Guest orders Scout again",
+    "host": {
+      "tick": 1330,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            740,
+            266
+          ]
+        }
+      },
+      "image": "21-host.png"
+    },
+    "guest": {
+      "tick": 1662,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34778.9,
+            966.9,
+            -70158
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            723,
+            265
+          ]
+        }
+      },
+      "image": "21-guest.png"
+    },
+    "time": 1795398180.056465
+  },
+  {
+    "label": "Guest orders Scout again",
+    "host": {
+      "tick": 1335,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34776.8,
+            966.9,
+            -70157.5
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            735,
+            266
+          ]
+        }
+      },
+      "image": "22-host.png"
+    },
+    "guest": {
+      "tick": 1669,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34776.8,
+            966.9,
+            -70157.5
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            718,
+            265
+          ]
+        }
+      },
+      "image": "22-guest.png"
+    },
+    "time": 1795398180.3394134
+  },
+  {
+    "label": "Guest orders Scout again",
+    "host": {
+      "tick": 1340,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34774.6,
+            966.9,
+            -70156.9
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            730,
+            267
+          ]
+        }
+      },
+      "image": "23-host.png"
+    },
+    "guest": {
+      "tick": 1675,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34774.4,
+            966.9,
+            -70156.8
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            712,
+            266
+          ]
+        }
+      },
+      "image": "23-guest.png"
+    },
+    "time": 1795398180.622032
+  },
+  {
+    "label": "Guest orders Scout again",
+    "host": {
+      "tick": 1345,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34772,
+            966.9,
+            -70156.1
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            723,
+            267
+          ]
+        }
+      },
+      "image": "24-host.png"
+    },
+    "guest": {
+      "tick": 1682,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        },
+        "Stoat Scout": {
+          "position": [
+            34772,
+            966.9,
+            -70156.1
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            707,
+            267
+          ]
+        }
+      },
+      "image": "24-guest.png"
+    },
+    "time": 1795398180.9054155
+  },
+  {
+    "label": "Guest Guide order refused",
+    "host": {
+      "tick": 1423,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34734.7,
+            966.5,
+            -70145.8
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            629,
+            279
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "25-host.png"
+    },
+    "guest": {
+      "tick": 1751,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34738,
+            966.6,
+            -70146.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            620,
+            278
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        }
+      },
+      "image": "25-guest.png"
+    },
+    "time": 1795398183.4873707
+  },
+  {
+    "label": "Guest mixed-selection order refused",
+    "host": {
+      "tick": 1460,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34716.7,
+            966.5,
+            -70140.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            581,
+            285
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "26-host.png"
+    },
+    "guest": {
+      "tick": 1797,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34717,
+            966.5,
+            -70140.8
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            564,
+            285
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        }
+      },
+      "image": "26-guest.png"
+    },
+    "time": 1795398184.8725982
+  },
+  {
+    "label": "Ready to play again",
+    "host": {
+      "tick": 1562,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34665,
+          969.2,
+          -70142
+        ],
+        "eye": [
+          34665,
+          1064.3,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34692.2,
+            966.3,
+            -70133.7
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            512,
+            294
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            383,
+            147
+          ]
+        }
+      },
+      "image": "27-host.png"
+    },
+    "guest": {
+      "tick": 1899,
+      "camera": {
+        "mode": "strategy",
+        "pivot": [
+          34671.2,
+          968.9,
+          -70142
+        ],
+        "eye": [
+          34671.2,
+          1064,
+          -69938.1
+        ],
+        "yaw": 0,
+        "pitch": 25,
+        "zoom": 225,
+        "fov": 50,
+        "focus": null,
+        "settled": true
+      },
+      "actors": {
+        "Stoat Scout": {
+          "position": [
+            34692.2,
+            966.3,
+            -70133.7
+          ],
+          "selected": true,
+          "onScreen": true,
+          "screen": [
+            493,
+            294
+          ]
+        },
+        "Stoat Guide": {
+          "position": [
+            34643.2,
+            993.6,
+            -70237.4
+          ],
+          "selected": false,
+          "onScreen": true,
+          "screen": [
+            369,
+            147
+          ]
+        }
+      },
+      "image": "27-guest.png"
+    },
+    "time": 1795398188.3634977
+  }
+]

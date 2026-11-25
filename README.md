@@ -1,6 +1,8 @@
 # MeitouP2P-Coop
 
-A two-player **developer preview** for stock Windows MeitouClient **0.22.1**. On the same PC, the guest can select Stoat Scout and right-click a destination while the host moves Stoat Guide. Both players retain their own cameras and selections.
+A two-player **developer preview** for stock Windows MeitouClient **0.22.1**. The guest can select Stoat Scout and right-click a destination while the host moves Stoat Guide. Both players retain their own cameras and selections.
+
+The 0.2 preview adds **Multiplayer → Host / Join**, coordinated world preparation, and an isolated player ZIP for a volunteer test over Tailscale. [Player setup and acceptance steps](docs/remote-playtest.md) · [Menu, walk and reconnect validation](docs/remote-results.md). A first two-PC volunteer session on 23 November 2026 reported approximately 30 minutes of shared movement, corroborated by host logs, and a successful fresh-session restart. Doors, carried objects and inventory/trading remain unsynchronized; full remote acceptance is still incomplete. The replay below records the earlier same-PC trial.
 
 ![The host moves Stoat Guide while the guest walks and reselects Stoat Scout in stock MeitouClient 0.22.1](docs/stoat-walk-0.22.1.gif)
 
@@ -8,11 +10,11 @@ Watch the right window as the guest pans away. On returning, a click at the Scou
 
 Development continues in the Meitou Modding Ecosystem organization. Contributions to character control, replication and testing are welcome through pull requests. Include the game build, actions in each window and host-tick evidence. The earlier 0.20.0 and 0.20.1 implementation remains available in the merged baseline. [0.20.x source and instructions](https://github.com/Meitou-Modding-Ecosystem/MeitouP2P-Coop/tree/430e795685ee01a0420f8ed904466b1f9d1c9ae4)
 
-## Run the preview
+## Build and run from source
 
 Install the .NET 11 SDK, Python 3, your own Kenshi game and the Windows x64 MeitouClient 0.22.1 release. Clone `MeitouP2P` and `MeitouP2P-Coop` as sibling folders. From the connector checkout, build both mods against the release you will launch. Use that build for both players. The disposable **Stoat Scout Walk** fixture supplies the two matching characters. [Build both mods](https://github.com/Meitou-Modding-Ecosystem/MeitouP2P#build-and-test-with-co-op) · [Launch the two windows](https://github.com/Meitou-Modding-Ecosystem/MeitouP2P#walk-stoat-scout-in-two-windows) · [Native-input test driver](https://github.com/Meitou-Modding-Ecosystem/MeitouP2P/blob/main/tools/stoat-native-walk.py)
 
-MeitouP2P owns the loopback session. Co-op gives the guest permission to move one character in the current host world. The host checks the peer, grant and character before submitting a normal `MoveOrder`. In the named fixture, the guest draws both matching characters from the same host tick using their position, facing and animation. The guest simulation and the rest of the world run locally. The tested releases use the same private drawing and input hooks. Martin described the available mod hooks during the original 0.20.0 trial. [Upstream answer](https://github.com/VlcekM/MeitouClient/issues/749#issuecomment-6898903424)
+MeitouP2P owns the connection and lobby. Co-op gives the guest permission to move one character in the current host world. The host checks the peer, grant and character before submitting a normal `MoveOrder`. In the named fixture, the guest draws both matching characters from the same host tick using their position, facing and animation. The guest simulation and the rest of the world run locally. The tested releases use the same private drawing and input hooks. Martin described the available mod hooks during the original 0.20.0 trial. [Upstream answer](https://github.com/VlcekM/MeitouClient/issues/749#issuecomment-6898903424)
 
 ## Try the underlying grant through F10
 
